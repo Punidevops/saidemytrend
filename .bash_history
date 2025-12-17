@@ -83,3 +83,21 @@ ls
 ld
 ls
 cat sonar-project.properties 
+ls
+vi Jenkinsfile
+cat Jenkinsfile
+vi Jenkinsfile
+git add .
+yum install git -y
+git add.
+git add .
+git commit "sonar" -m 
+ls
+git commit -m "sonar"
+git init 
+git commit -m "sonar"
+git add .
+git commit -m "sonar"
+git add .
+git commit -m "sonar"
+git push origin main 
