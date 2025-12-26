@@ -1,4 +1,7 @@
-def registry = https:'//trial10puneeth.jfrog.io/'
+<<<<<<< HEAD
+def registry = "https://trial10puneeth.jfrog.io/"
+=======
+>>>>>>> 4013dde6438af65a60abbff02caf8d8b12617609
 pipeline {
     agent any
 
@@ -8,6 +11,7 @@ pipeline {
 
     stages {
 
+<<<<<<< HEAD
         stage("build") {
             steps {
                 echo "--------- build started ---------"
@@ -25,6 +29,15 @@ pipeline {
         }
 
         stage("SonarQube analysis") {
+=======
+        stage('Build') {
+            steps {
+                sh 'mvn clean verify'
+            }
+        }
+
+        stage('SonarQube Analysis') {
+>>>>>>> 4013dde6438af65a60abbff02caf8d8b12617609
             environment {
                 scannerHome = tool 'puni-sonar-cubeserver'
             }
@@ -34,6 +47,7 @@ pipeline {
                 }
             }
         }
+<<<<<<< HEAD
 
         stage("Jar Publish") {
             steps {
@@ -67,6 +81,8 @@ pipeline {
                 }
             }
         }
+=======
+>>>>>>> 4013dde6438af65a60abbff02caf8d8b12617609
     }
 }
 
